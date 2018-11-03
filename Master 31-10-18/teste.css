@@ -2,11 +2,16 @@
 @charset "UTF-8";
 #lgtp{
 position: absolute;
-left:-9%;
-top:-150px;
-margin: 1%;
+left:9px;
+top: 2px;
+width: 20%;
+
+
+
+
 
 }
+
 
 body {
   font-family:"Stencil Std";
@@ -21,6 +26,8 @@ body {
   			background-size: 100% 100%;
   			background-color:#000;
   			background-attachment:fixed;
+
+  			
 }
 img {
     opacity: 0.5;
@@ -47,7 +54,7 @@ p#paragrafo{
 
 }
 p{
-  text-align: left;
+  text-align: center;
 }
 
  nav#menu ul{
@@ -113,7 +120,7 @@ input[type=text] {
 }
 
 input[type=text]:focus {
-    border: 3px solid #2dabf9;
+    border: 3px solid #555;
 }
 
 input[type=password] {
@@ -128,7 +135,7 @@ input[type=password] {
 }
 
 input[type=password]:focus {
-    border: 3px solid #2dabf9;
+    border: 3px solid #555;
 }
 input[type=email] {
     width: 100%;
@@ -142,7 +149,7 @@ input[type=email] {
 }
 
 input[type=email]:focus {
-    border: 3px solid #2dabf9;
+    border: 3px solid #555;
 }
 
 }
