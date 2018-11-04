@@ -5,13 +5,7 @@ position: absolute;
 left:9px;
 top: 2px;
 width: 20%;
-
-
-
-
-
 }
-
 
 body {
   font-family:"Stencil Std";
@@ -54,7 +48,7 @@ p#paragrafo{
 
 }
 p{
-  text-align: center;
+  text-align: left;
 }
 
  nav#menu ul{
@@ -98,14 +92,13 @@ nav#menu a:hover {
 
 form#inscrição1{
   position: absolute;
-  top: 18%;
+  top: 16%;
   right:15%; 
   background-color: rgba(20,20,20,0.2);
   font-family: Arial;
   width: 25%;
-
-
 }
+
 input[type=text] {
     width: 100%;
     padding: 12px 20px;
@@ -120,7 +113,7 @@ input[type=text] {
 }
 
 input[type=text]:focus {
-    border: 3px solid #555;
+    border: 3px solid #2dabf9;
 }
 
 input[type=password] {
@@ -135,7 +128,7 @@ input[type=password] {
 }
 
 input[type=password]:focus {
-    border: 3px solid #555;
+    border: 3px solid #2dabf9;
 }
 input[type=email] {
     width: 100%;
@@ -149,7 +142,7 @@ input[type=email] {
 }
 
 input[type=email]:focus {
-    border: 3px solid #555;
+    border: 3px solid #2dabf9;
 }
 
 }

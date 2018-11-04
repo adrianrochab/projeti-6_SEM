@@ -23,7 +23,13 @@ body {
 }
 img {
     opacity: 0.5;
-    filter: alpha(opacity=50); 
+    filter: alpha(opacity=50);
+}
+#lgtp{
+position: absolute;
+left:-5px;
+top: -12px;
+width: 20%;
 }
 form#inscrição1{
   position: absolute;
