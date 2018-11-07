@@ -11,7 +11,7 @@ body {
 .titulo {
     padding: 10px;
     text-align: center;
-    background-image: url(pc.png);
+    background-image: url(../_imgs/pc.png);
     background-size: cover;
 }
 img#algo{
@@ -90,13 +90,12 @@ p{
 }
 
 .rodape {
-    padding: 20px;
+    padding: 10px;
     background: #ddd;
 }
 .rodape p{
     text-align: center;
 }
-
 
 @media screen and (max-width: 700px) {
     .meio {   
@@ -110,3 +109,4 @@ p{
         width: 100%;
     }
 }
+
