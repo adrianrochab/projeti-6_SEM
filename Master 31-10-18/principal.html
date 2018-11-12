@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="_css/principal.css">
-<link rel="shortcut icon" href="logo.png" type="image/x-icon"/>
+<link rel="shortcut icon" href="logo1.png" type="image/x-png"/>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
@@ -19,7 +19,29 @@
 <div class="navbar">
   <a href="inscricao.html"><i class="fas fa-home"></i> Home</a>
   <a href="#">Sobre</a>
-  <a href="#" class="right"><i class="fas fa-user"></i></a>
+  <button onclick="myFunction()" class="botao-user"><i class="fas fa-user"></i> Usuário</button>
+  <div id="drop-user" class="dropdown-user">
+    <a href="inscricao.html">Sair</a>
+  </div>
+  <script>
+function myFunction() {
+    document.getElementById("drop-user").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.botao-user')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-user");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 
 </div>
 
