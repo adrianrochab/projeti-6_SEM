@@ -27,7 +27,7 @@
 
 </head>
 <body>
-<a href="inscricao.html" > <img src="CODEDEVE.png" width="500" id="lgtp" a/> </a>
+<a href="inscricao.html" > <img src="CODEDEVE.png" width="500" id="lgtp" /> </a>
 <div id="area">
 <form id="inscrição1">
       <fieldset id='sign_in'>
@@ -38,9 +38,31 @@
        <p> <label for="senha">Senha</label> <input type="password" name="cam_senha" id="senha" size="30" maxlength="8" placeholder="Digite sua Senha"></p>
        <p> <label for="senha_confirm">Confirmar Senha</label>
        	<input type="password" name="cam_senha_confirm" id="senha_confirm" size="30" maxlength="8" placeholder="Repita a Senha"></p>
-      	 <button type="submit" >Enviar</button>
-      </fieldset>
+           </fieldset>
       </form>
+
+      	 <div class="loading"><button type="submit" class="btn" id="botao">Enviar</button>
+         <script type="text/javascript">
+           var button = document.querySelector('#botao');
+
+button.onclick = function(){
+  this.classList.add('btn-fill');
+  setTimeout(function(){
+    button.classList.add('btn-load');
+  }, 200);
+  setTimeout(function(){
+    button.classList.remove('btn-fill');
+    button.classList.remove('btn-load')
+    button.innerHTML = "Enviado!";
+    setTimeout(function(){
+      button.innerHTML = "Enviar";
+    }, 2000);
+  },4000);
+}
+         </script>
+          </div>
+
+      
 </div>
 </body>
 </html>
