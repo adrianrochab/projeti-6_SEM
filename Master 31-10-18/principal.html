@@ -2,98 +2,99 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<title>CodeDev</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="_css/principal.css">
-<link rel="shortcut icon" href="logo1.png" type="image/x-png"/>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <title>CodeDev</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="_css/principal.css">
+  <link rel="shortcut icon" href="logo1.png" type="image/x-png"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
 
-<div class="titulo">
-  <img id="logo-titulo" src="CODEDEVE.png">
-</div>
-
-<div class="navbar">
-  <a href="inscricao.html"><i class="fas fa-home"></i> Home</a>
-  <a href="#">Sobre</a>
-  <button onclick="myFunction()" class="botao-user"><i class="fas fa-user"></i> Usuário</button>
-  <div id="drop-user" class="dropdown-user">
-    <a href="inscricao.html">Sair</a>
+  <div class="titulo">
+    <img id="logo-titulo" src="_imgs/CODEDEVE.png">
   </div>
-  <script>
-function myFunction() {
-    document.getElementById("drop-user").classList.toggle("show");
-}
 
-window.onclick = function(event) {
-  if (!event.target.matches('.botao-user')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-user");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
+  <div class="navbar">
+    <a href="Paginas/inscricao.html"><i class="fas fa-home"></i> Home</a>
+    <a href="#">Cursos</a>
+    <a href="#">Fale Conosco</a>
+    <button onclick="myFunction()" class="botao-user"><i class="fas fa-user"></i> Usuário</button>
+    <div id="drop-user" class="dropdown-user">
+      <a href="Paginas/inscricao.html">Sair</a>
+    </div>
+    <script>
+      function myFunction() {
+        document.getElementById("drop-user").classList.toggle("show");
       }
-    }
-  }
-}
-</script>
 
+      window.onclick = function(event) {
+        if (!event.target.matches('.botao-user')) {
+
+          var dropdowns = document.getElementsByClassName("dropdown-user");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+    </script>
+
+  </div>
+
+  <div class="meio">
+    <div class="lado-esq">
+     <h2 id="algoritmo">Algoritmo</h2>
+     <div class="bloco"><img id="algo" src="_imgs/algoritmo.jpg"></div>
+     <br><br><p>Aqui você irá aprender toda a base sobre algoritmo</p>
+     <div class="conteudo">
+       <div class="programacao"><b>Programação de Conteúdos</b> <input value="Ver Mais" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Ler Menos'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Ler Mais'; }" type="button">
+       </div>
+       <div class="borda-conteudo">
+         <div style="display: none;">
+
+          Texto<br>
+          Texto<br>
+          Texto<br>
+
+          <br>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="logica">Lógica de Programação</h2>
+    <div class="bloco"><img id="log" src="_imgs/lógica.png"></div>
+    <p>Aqui você irá aprender toda a base sobre lógica de programação</p>
+    <div class="conteudo">
+     <div class="programacao"><b>Programação de Conteúdos</b> <input value="Ver Mais" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Ler Menos'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Ler Mais'; }" type="button">
+     </div>
+     <div class="borda-conteudo">
+       <div style="display: none;">
+
+        Texto<br>
+        Texto<br>
+        Texto<br>
+
+        <br>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="meio">
-  <div class="lado-esq">
-   <h2 id="algoritmo">Algoritmo</h2>
-      <div class="bloco"><img id="algo" src="algoritmo.jpg"></div>
-      <br><br><p>Aqui você irá aprender toda a base sobre algoritmo</p>
-      <div class="conteudo">
- <div class="programacao"><b>Programação de Conteúdos</b> <input value="Ver Mais" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Ler Menos'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Ler Mais'; }" type="button">
- </div>
- <div class="borda-conteudo">
- <div style="display: none;">
-
-Texto<br>
-Texto<br>
-Texto<br>
-
- <br>
- </div>
- </div>
- </div>
-
-      <h2 id="logica">Lógica de Programação</h2>
-      <div class="bloco"><img id="log" src="lógica.png"></div>
-      <p>Aqui você irá aprender toda a base sobre lógica de programação</p>
-      <div class="conteudo">
- <div class="programacao"><b>Programação de Conteúdos</b> <input value="Ver Mais" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Ler Menos'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Ler Mais'; }" type="button">
- </div>
- <div class="borda-conteudo">
- <div style="display: none;">
-
-Texto<br>
-Texto<br>
-Texto<br>
-
- <br>
- </div>
- </div>
- </div>
-  </div>
-
-  <div class="principal">
-      <h2>CURSO SOBRE ALGORITMO</h2>
-      <h5></h5>
-      <div class="bloco">Scratch</div>
-      <p>Texto</p> <br>
-      <h2>CURSO SOBRE LÓGICA DE PROGRAMAÇÃO</h2>
-      <h5></h5>
-      <div class="bloco">Scratch</div>
-      <p>Texto</p>
-  </div>
+<div class="principal">
+  <h2>CURSO SOBRE ALGORITMO</h2>
+  <h5></h5>
+  <div class="bloco">Scratch</div>
+  <p>Texto</p> <br>
+  <h2>CURSO SOBRE LÓGICA DE PROGRAMAÇÃO</h2>
+  <h5></h5>
+  <div class="bloco">Scratch</div>
+  <p>Texto</p>
+</div>
 </div>
 
 <div class="rodape">
