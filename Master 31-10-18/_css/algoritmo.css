@@ -1,0 +1,94 @@
+
+@charset "UTF-8";
+@import url('https://fonts.google.com');
+/* INICIO DO PRIMEIRO BLOCO */
+.navbar{
+	position: sticky;
+    top: 0px;
+}
+ul{
+	list-style: none;
+	color: #000;
+}
+li{
+	line-height: 30px;
+}
+#desc{
+	width: 270px;
+	height: 400px;
+	margin-top: 3%;
+	margin-left: 13%;
+	background: #373b42;
+
+}
+
+#dentro1{
+	background: #375d77;
+	width: 270px;
+	height: 225px;
+	margin-top: -12%;	
+}
+
+#texto{
+	font-size: 24pt;
+	font-family: "Stencil Std";
+	color: #fff;
+	margin-left: 20px;
+
+}
+
+#inscricao{
+	font-size: 15pt;
+	font-weight: 700;
+	padding: 25px 50px;
+	margin-left: 34px;
+	margin-top: 0%;
+	background: #333c4c;
+	color: #fff;
+	border: none;
+	text-decoration: none;
+	cursor: pointer;
+
+}
+/* FIM DO PRIMEIRO BLOCO */
+/* INICIO DO SEGUNDO BLOCO */
+#emenda{
+	width: 600px;
+	height:700px;
+	margin-top: -25% ;
+	margin-left: 38%;
+	background: #e1e8f2;''
+}
+
+#inf{
+	position: absolute;
+	margin-left: 38%;
+	margin-top: -28%;
+	font-size: 18pt;
+	font-family: Cardo;
+}
+
+#atencao{
+	width: 500px;
+}
+
+.conteudo{
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 30px;
+	font-size: 13pt;
+	width: 560px;
+}
+.conteudo p{
+	font-size: 13pt;
+	font-family: Cardo;
+	color: #142b51;
+	text-align: justify;
+}
+
+#nav{
+	font-size: 8pt;
+	margin-top: -23px;
+	opacity: 0.4;
+}
+/* FIM DO SEGUNDO BLOCO */
