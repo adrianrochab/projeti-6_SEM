@@ -4,10 +4,10 @@
 
 #lgtp{
   position: absolute;
-  left:3%;
-  top: 2%;
-  width: 7%;
-  height: 7%;
+  left: 1%;
+  top: 1%;
+  width: 15%;
+  height: 10%;
 
 }
 
@@ -27,8 +27,8 @@ body {
 
 }
 img {
-  opacity: 0.5;
-  filter: alpha(opacity=50); 
+  
+  width: 100%; 
 }
 div#ap1{
   position: absolute;
