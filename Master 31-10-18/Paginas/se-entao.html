@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>CodeDev - Curso de Algoritmo</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../_css/principal.css">
+	<link rel="stylesheet" type="text/css" href="../_css/modelo aulas.css">
+	<link rel="shortcut icon" href="../_imgs/logo1.png" type="image/x-png"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	
+</head>
+<body>
+	
+
+	<div class="titulo">
+		<img id="logo-titulo" src="../_imgs/CODEDEVE.png">
+	</div>
+	<div class="navbar">
+		<a href="../index.html"><i class="fas fa-home"></i> Home</a>
+		<a href="#">Cursos</a>
+		<a href="#">Fale Conosco</a>
+		<button onclick="myFunction()" class="botao-user"><i class="fas fa-user"></i> Usuário</button>
+		<div id="drop-user" class="dropdown-user">
+      <a href="../index.html">Sair <i class="far fa-times-circle"></i></a>
+    </div>
+		<script>
+			function myFunction() {
+				document.getElementById("drop-user").classList.toggle("show");
+			}
+
+			window.onclick = function(event) {
+				if (!event.target.matches('.botao-user')) {
+
+					var dropdowns = document.getElementsByClassName("dropdown-user");
+					var i;
+					for (i = 0; i < dropdowns.length; i++) {
+						var openDropdown = dropdowns[i];
+						if (openDropdown.classList.contains('show')) {
+							openDropdown.classList.remove('show');
+						}
+					}
+				}
+			}
+		</script>
+	</div>
+	
+<header>
+  <h2>Se - Então</h2>
+</header>
+
+<section>
+  <nav>
+  	<h4>EMENTA DO CURSO</h4>
+    <ul>
+                <li> 1 - <a href="#">Curso de Algoritmo - Olá, Mundo!</a></li>
+				<li> 2 - <a href="#">Curso de Algoritmo - Se - Então</a></li>
+				<li> 3 - <a href="#">Curso de Algoritmo - Se - Então - Se não</a></li>
+				<li> 4 - <a href="#">Curso de Algoritmo - Escolha - Caso</a></li>
+				<li> 5 - <a href="#">Curso de Algoritmo - Enquanto - Faça</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Scratch</h1>
+    
+  </article>
+</section>
+
+<footer class="modelo">
+  <a href="ola mundo.html" id="anterior">< Aula Anterior</a>
+  <a href="Se - Então - Se não.html" id="proxima">Próxima Aula ></i></a>
+</footer>
+	
+</body>
+</html>
