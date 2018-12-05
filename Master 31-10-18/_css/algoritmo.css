@@ -1,6 +1,7 @@
 
 @charset "UTF-8";
 @import url('https://fonts.google.com');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 /* INICIO DO PRIMEIRO BLOCO */
 .navbar{
 	position: sticky;
@@ -12,6 +13,12 @@ ul{
 }
 li{
 	line-height: 30px;
+}
+h4#ementa-do-curso{
+	color: black;
+}
+h1#nome-curso{
+	text-align: center;
 }
 #desc{
 	width: 270px;
@@ -34,6 +41,8 @@ li{
 	font-family: "Stencil Std";
 	color: #fff;
 	margin-left: 20px;
+	right: 4%;
+	position: relative;
 
 }
 
@@ -58,6 +67,9 @@ li{
 	margin-top: -25% ;
 	margin-left: 38%;
 	background: #e1e8f2;''
+}
+.ementa{
+	color: #063e58;
 }
 
 #inf{
@@ -92,3 +104,6 @@ li{
 	opacity: 0.4;
 }
 /* FIM DO SEGUNDO BLOCO */
+.caminhos{
+	color: blue;
+}

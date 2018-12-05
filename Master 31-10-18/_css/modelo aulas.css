@@ -42,6 +42,13 @@ a#proxima{
     color: white;
     text-decoration: none;
 }
+.ementa{
+    color: #063e58;
+    text-decoration: none;
+}
+h4#ementa-do-curso{
+    color: black;
+}
 article {
     float: left;
     padding: 20px;

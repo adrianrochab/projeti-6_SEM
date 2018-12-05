@@ -6,6 +6,7 @@
  <link rel="stylesheet" type="text/css" href="_css/inscricao.css"/>
  <link rel="shortcut icon" href="_imgs/logo1.png" type="image/x-png"/>
  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+ <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
   <!-- LOGO DO SITE-->
@@ -15,8 +16,8 @@
     <!-- MENU DE NAVEGAÇÃO-->
     <nav id="menu">
       <ul>
-        <li> <a href="Paginas/login.html" target="_self"><i class="fas fa-user"></i> Login</a></li>
-        <li> <a href="#" target="_self">Ver Cursos</a></li>
+        <li> <a href="Paginas/login.html" target="_self" class="botoes-nav"><i class="fas fa-user"></i> Login</a></li>
+        <li> <a href="#" target="_self" class="botoes-nav">Ver Cursos</a></li>
       </ul>
     </nav>
   </div>
@@ -33,12 +34,12 @@
  <div id="area">
   <form id="inscrição1">
     <fieldset id='sign_in'>
-     <legend>INSCREVA-SE</legend>
-     <p> <label for="nome"> Nome</label> <input type="text" name="cam_nome" id="nome" size="30" maxlength="50" placeholder="Nome de Usuário"></p>
-     <p> <label for="email">Email</label>
+     <legend class="formulario">INSCREVA-SE</legend>
+     <p> <label for="nome" class="formulario"> Nome</label> <input type="text" name="cam_nome" id="nome" size="30" maxlength="50" placeholder="Nome de Usuário"></p>
+     <p> <label for="email" class="formulario">Email</label>
       <input type="email" name="cam_email" id="email" size="30" maxlength="50" placeholder="Digite seu Email" ></p>
-      <p> <label for="senha">Senha</label> <input type="password" name="cam_senha" id="senha" size="30" maxlength="8" placeholder="Digite sua Senha"></p>
-      <p> <label for="senha_confirm">Confirmar Senha</label>
+      <p> <label for="senha" class="formulario">Senha</label> <input type="password" name="cam_senha" id="senha" size="30" maxlength="8" placeholder="Digite sua Senha"></p>
+      <p> <label for="senha_confirm" class="formulario">Confirmar Senha</label>
         <input type="password" name="cam_senha_confirm" id="senha_confirm" size="30" maxlength="8" placeholder="Repita a Senha"></p>
       </fieldset>
     </form>

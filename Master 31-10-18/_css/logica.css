@@ -34,6 +34,8 @@ li{
 	font-family: "Stencil Std";
 	color: #fff;
 	margin-left: 28px;
+	right: 5%;
+	position: relative;
 
 }
 
@@ -92,3 +94,12 @@ li{
 	opacity: 0.4;
 }
 /* FIM DO SEGUNDO BLOCO */
+h4#ementa-do-curso{
+	color: black;
+}
+.ementa{
+	color: #063e58;
+}
+.caminhos{
+	color: blue;
+}
