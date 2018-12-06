@@ -21,13 +21,14 @@ body {
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
-  background-size: 100% 100%;
+  background-size: 100%  100% ;
   background-color:#000;
+  background-repeat: no-repeat;
   background-attachment:fixed;
 
 }
 img {
-  
+
   width: 100%; 
 }
 div#ap1{
@@ -223,3 +224,64 @@ section#corpo{
 .formulario{
   font-family: 'Montserrat', sans-serif;
 }
+
+.cursos{
+  margin-top: 500px;  
+  width: 100%;
+  background-color: #fff;
+  color: black;
+} 
+/* inicio cards */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 32%;
+    height: 46%;
+    left: 10%;
+    position: absolute;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 2px 16px;
+
+}
+img#algoritmo{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.card2{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 32%;
+    left: 55%;
+    position: absolute;
+    height: 46%;
+
+}
+
+.card2:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 2px 16px;
+
+}
+img#logica{
+  width:100%;
+  height: 100%;
+  position: relative;
+}
+
+footer {
+    background-color: #355C7D;
+    padding: 1px;
+    color: white;
+}
+/* inicio cards */
