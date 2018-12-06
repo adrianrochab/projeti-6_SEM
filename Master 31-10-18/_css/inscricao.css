@@ -25,7 +25,6 @@ body {
   background-color:#000;
   background-attachment:fixed;
 
-
 }
 img {
   
@@ -80,7 +79,7 @@ nav#menu li{
 
 }
 nav#menu li:hover{
-  background-color:  #595959;;
+  background-color:  #595959;
 
 }  
 nav#menu a{
