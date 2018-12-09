@@ -10,6 +10,21 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	
+	<!--VIDEO -->
+	<link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+	<script src="http://vjs.zencdn.net/4.12/video.js"></script>
+	<style type="text/css">
+	.vjs-default-skin { color: #ffffff; margin-left: 2%;}
+		.vjs-default-skin .vjs-play-progress,
+		.vjs-default-skin .vjs-volume-level { background-color: #29a2e3 }
+		.vjs-default-skin .vjs-control-bar,
+		.vjs-default-skin .vjs-big-play-button { background: rgba(3,1,1,0.7) }
+		.vjs-default-skin .vjs-slider { background: rgba(3,1,1,0.2333333333333333) }
+		.vjs-default-skin .vjs-control-bar { font-size: 92% }
+	</style>
+
+	<!--VIDEO -->
+
 </head>
 <body>
 	
@@ -23,8 +38,8 @@
 		<a href="fale conosco.html">Fale Conosco</a>
 		<button onclick="myFunction()" class="botao-user"><i class="fas fa-user"></i> Usuário</button>
 		<div id="drop-user" class="dropdown-user">
-      <a href="../index.html">Sair <i class="far fa-times-circle"></i></a>
-    </div>
+			<a href="../index.html">Sair <i class="far fa-times-circle"></i></a>
+		</div>
 		<script>
 			function myFunction() {
 				document.getElementById("drop-user").classList.toggle("show");
@@ -46,32 +61,36 @@
 		</script>
 	</div>
 	
-<header>
-  <h2>Olá, Mundo!</h2>
-</header>
+	<header>
+		<h2>Olá, Mundo!</h2>
+	</header>
 
-<section>
-  <nav>
-  	<h4 id="ementa-do-curso">EMENTA DO CURSO</h4>
-    <ul>
-                <li> 1 - <a href="#" class="ementa">Curso de Algoritmo - Olá, Mundo!</a></li><br>
+	<section>
+		<nav>
+			<h4 id="ementa-do-curso">EMENTA DO CURSO</h4>
+			<ul>
+				<li> 1 - <a href="#" class="ementa">Curso de Algoritmo - Olá, Mundo!</a></li><br>
 				<li> 2 - <a href="#" class="ementa">Curso de Algoritmo - Se - Então</a></li><br>
 				<li> 3 - <a href="#" class="ementa">Curso de Algoritmo - Se - Então - Se não</a></li><br>
 				<li> 4 - <a href="#" class="ementa">Curso de Algoritmo - Escolha - Caso</a></li><br>
 				<li> 5 - <a href="#" class="ementa">Curso de Algoritmo - Enquanto - Faça</a></li><br>
-    </ul>
-  </nav>
-  
-  <article>
-    <h1>Scratch</h1>
-    
-  </article>
-</section>
+			</ul>
+		</nav>
 
-<footer class="modelo">
-  <a href="Algoritmo.html" id="anterior">< Voltar</a>
-  <a href="se-entao.html" id="proxima">Próxima Aula ></i></a>
-</footer>
-	
+		<article>
+			<video id="MY_VIDEO_1" class="video-js vjs-default-skin" controls
+			preload="auto" width="885" height="500" poster="MY_VIDEO_POSTER.jpg"
+			data-setup="{}">
+			<source src="../Video/viceo.mp4" type='video/mp4'>
+				<p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+			</video>
+		</article>
+	</section>
+
+	<footer class="modelo">
+		<a href="Algoritmo.html" id="anterior">< Voltar</a>
+		<a href="se-entao.html" id="proxima">Próxima Aula ></i></a>
+	</footer>
+
 </body>
 </html>
