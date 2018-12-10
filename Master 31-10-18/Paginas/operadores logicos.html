@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>CodeDev - Curso de Algoritmo</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../_css/principal.css">
+	<link rel="stylesheet" type="text/css" href="../_css/modelo aulas.css">
+	<link rel="shortcut icon" href="../_imgs/logo1.png" type="image/x-png"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	
+</head>
+<body>
+	
+
+	<div class="titulo">
+		<img id="logo-titulo" src="../_imgs/CODEDEVE.png">
+	</div>
+	<div class="navbar">
+		<a href="principal.html"><i class="fas fa-home"></i> Home</a>
+		<a href="principal.html">Cursos</a>
+		<a href="fale conosco.html">Fale Conosco</a>
+		<button onclick="myFunction()" class="botao-user"><i class="fas fa-user"></i> Usuário</button>
+		<div id="drop-user" class="dropdown-user">
+      <a href="../index.html">Sair <i class="far fa-times-circle"></i></a>
+    </div>
+		<script>
+			function myFunction() {
+				document.getElementById("drop-user").classList.toggle("show");
+			}
+
+			window.onclick = function(event) {
+				if (!event.target.matches('.botao-user')) {
+
+					var dropdowns = document.getElementsByClassName("dropdown-user");
+					var i;
+					for (i = 0; i < dropdowns.length; i++) {
+						var openDropdown = dropdowns[i];
+						if (openDropdown.classList.contains('show')) {
+							openDropdown.classList.remove('show');
+						}
+					}
+				}
+			}
+		</script>
+	</div>
+	
+<header>
+  <h2>Operadores Lógicos</h2>
+</header>
+
+<section>
+  <nav>
+  	<h4 id="ementa-do-curso">EMENTA DO CURSO</h4>
+    <ul>
+                <li> 1 - <a href="" class="ementa">Curso Lógica de Programação - Variáveis e Tipos de Dados </a></li><br>
+				<li> 2 - <a href="" class="ementa">Curso Lógica de Programação - Operadores Aritméticos </a></li><br>
+				<li> 3 - <a href="" class="ementa">Curso Lógica de Programação - Operadores Relacionais </a></li><br>
+				<li> 4 - <a href="" class="ementa">Curso Lógica de Programação - Operadores Lógicos </a></li><br>
+				<li> 5 - <a href="" class="ementa">Curso Lógica de Programação - Comandos de Entrada e Saída </a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Scratch</h1>
+    
+  </article>
+</section>
+
+<footer class="modelo">
+  <a href="operadores relacionais.html" id="anterior">< Aula Anterior</a>
+  <a href="comandos de entrada e saida.html" id="proxima">Próxima Aula ></i></a>
+</footer>
+	
+</body>
+</html>
