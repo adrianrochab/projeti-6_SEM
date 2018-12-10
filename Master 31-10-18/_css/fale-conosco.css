@@ -57,7 +57,15 @@ p#enviar-limpar{
 .formulario-contato{
 	position: absolute;
 	left: 32%;
+
 }
 textarea {
 resize:none;
 }
+footer#rodape-contato {
+  background-color: #355C7D;
+  padding: 1px;
+  color: white;
+  margin-top: 35%;
+}
+
