@@ -11,13 +11,28 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+	<!--VIDEO -->
+	<link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+	<script src="http://vjs.zencdn.net/4.12/video.js"></script>
+	<style type="text/css">
+	.vjs-default-skin { color: #ffffff; margin-left: 2%;}
+		.vjs-default-skin .vjs-play-progress,
+		.vjs-default-skin .vjs-volume-level { background-color: #29a2e3 }
+		.vjs-default-skin .vjs-control-bar,
+		.vjs-default-skin .vjs-big-play-button { background: rgba(3,1,1,0.7) }
+		.vjs-default-skin .vjs-slider { background: rgba(3,1,1,0.2333333333333333) }
+		.vjs-default-skin .vjs-control-bar { font-size: 92% }
+	</style>
+
+	<!--VIDEO -->
 	
 </head>
 <body>
 	
 
 	<div class="titulo">
-		<img id="logo-titulo" src="../_imgs/CODEDEVE.png">
+		<img id="logo-titulo" src="../_imgs/CodeDev.png">
 	</div>
 	<div class="navbar">
 		<a href="principal.html"><i class="fas fa-home"></i> Home</a>
@@ -65,7 +80,12 @@
   </nav>
   
   <article>
-    <h1>Scratch</h1>
+    <video id="MY_VIDEO_1" class="video-js vjs-default-skin" controls
+			preload="auto" width="885" height="500" poster="MY_VIDEO_POSTER.jpg"
+			data-setup="{}">
+			<source src="../Video/viceo.mp4" type='video/mp4'>
+				<p class="vjs-no-js">Nenhum video encontrado, verifique a extenção e caminho e tente novamente <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+			</video>
     
   </article>
 </section>
